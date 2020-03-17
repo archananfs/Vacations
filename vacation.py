@@ -53,9 +53,9 @@ class Vacation:
                 End_date = np.busday_offset(start_date, Number_of_holidays + Max_list[i][1])
                 start_date64 = np.datetime64(start_date)
                 if start_date.weekday() == 0:
-                    print(start_date - datetime.timedelta(days=2), End_date, (End_date - start_date64) + 2)
+                    print("Start Date:", start_date - datetime.timedelta(days=2), "End Date:", End_date,",","Total Vacation:", (End_date - start_date64) + 2)
                 else:
-                    print(start_date, End_date, (End_date - start_date64))
+                    print("Start Date:", start_date, "End Date:", End_date, ",", "Total Vacation:", (End_date - start_date64))
 
 
     def get_vacation_options(self, number_of_vacations, country = 'DE', year = 2020):
@@ -64,8 +64,3 @@ class Vacation:
         iteration_list = self.get_iteration_list(date_list_updated, number_of_vacations)
         max_list = self.get_max_holiday_list(iteration_list)
         option = self.select_option(max_list,number_of_vacations)
-
-
-de = Vacation()
-de.get_vacation_options(15, 'US')
-#de.get_vacation_options(25, 'US')
