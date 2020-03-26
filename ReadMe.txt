@@ -6,14 +6,11 @@ Following python libraries:
 datetime
 holidays
 numpy
+tkinter
 
 ##Usage 
-Create a object with number of Holidays and Country as parameters.
-For country code refer https://pypi.org/project/holidays/
-Example: 
-Input: Country = USA, Number of vacation days = 15, year = 2020
-h = Vacation()
-h.get_vacation_options(15, 'US',2020)
+Run "gui_for_vacation.py", enter the name of the 'Country' you live in , 'Year' and number of vacation days, then press 'Calculate' button in the GUI window. You will get the possible vacation dates for maximum number of vacation span on output window. 
+
 
 Output:
  2020-11-26 2021-01-05 40 days
