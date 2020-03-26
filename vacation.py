@@ -40,7 +40,6 @@ class Vacation:
 
     def select_option(self, Max_list, Number_of_holidays):
         delta = []
-        d = {}
         result = []
         for j in range(0, len(Max_list)):
             delta.append(Max_list[j][0].weekday())
@@ -49,6 +48,7 @@ class Vacation:
             print("Option :", i + 1)
             option_result = []
             for j in range(i, delta[i] + 1):
+                d = {}
                 start_date = Max_list[i][0] - datetime.timedelta(days=j)
                 End_date = np.busday_offset(start_date, Number_of_holidays + Max_list[i][1])
                 start_date64 = np.datetime64(start_date)
@@ -63,7 +63,6 @@ class Vacation:
                     d["Total days"] = str(End_date - start_date64)
                 option_result.append(d)
             result.append(option_result)
-        
         return result
 
     def get_vacation_options(self, number_of_vacations, country, year):

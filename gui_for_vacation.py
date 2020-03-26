@@ -52,7 +52,7 @@ spin.grid(column=2, row=1)
 
 # 0utput
 lbl = Label(window, text ="Output")
-lbl.grid(column=0, row=2)
+lbl.grid(column=1, row=2)
 
 list_op = Listbox(window, height=6, width=60)
 list_op.grid(column=1, row=3, rowspan=5, columnspan=2)
