@@ -9,7 +9,6 @@ class Vacation:
         for key, value in holidays.CountryHoliday(country, years = year).items():
             if key.weekday() is not 5 and key.weekday() is not 6:
                 holiday_date_list.append([key, 0])
-        # print(holiday_date_list)
         return holiday_date_list
 
     def get_number_of_workingdays(self, holiday_date_list):
@@ -45,7 +44,7 @@ class Vacation:
             delta.append(Max_list[j][0].weekday())
 
         for i in range(0, len(delta)):
-            print("Option :", i + 1)
+            #print("Option :", i + 1)
             option_result = []
             for j in range(i, delta[i] + 1):
                 d = {}

@@ -51,10 +51,10 @@ spin = Spinbox(window, from_=1, to=200, width=5, textvariable=day_var)
 spin.grid(column=2, row=1)
 
 # 0utput
-lbl = Label(window, text ="Output")
+lbl = Label(window, text ="Output", anchor= CENTER)
 lbl.grid(column=1, row=2)
 
-list_op = Listbox(window, height=6, width=60)
+list_op = Listbox(window, height=6, width=60, highlightcolor="#DC143C")
 list_op.grid(column=1, row=3, rowspan=5, columnspan=2)
 
 # function call
