@@ -18,5 +18,5 @@ Year = 2020
 Number of Vacation Days = 10
 
 Output:
-
+![Output Image](https://github.com/archananfs/Vacations/blob/master/images/vacation_output.png)
 
