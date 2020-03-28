@@ -18,4 +18,5 @@ Year = 2020
 Number of Vacation Days = 10
 
 Output:
+Start Date: 2020-04=10 End Date: 2020-04-28 Duration : 18 days
 
